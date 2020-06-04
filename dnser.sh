@@ -50,7 +50,7 @@ curl -s "https://api.viewdns.info/reverseip/?apikey=$dnsapikey&output=json&host=
 	then
 	echo -e " \e[1;92m- Host not found or input error. Enter active domain with valid format. [e.g. ./dnser.sh youtube.com]\e\n[0m"
 	else
-	echo -e " \e[1;92m- According to Reverse IP results, it is a dedicated hosting.\e\n[0m"
+	echo -e " \e[1;92m- According to Reverse IP result, it is a dedicated hosting.\e\n[0m"
 	fi
 	
 rm -f domain_raw
