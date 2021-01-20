@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 #
 
 echo User Information Report Generated to $(pwd)/userinfo_$(hostname).txt
