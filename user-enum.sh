@@ -1,11 +1,15 @@
 #! /bin/bash
 #
 
-echo "User Information Report Generated to userinfo.txt."
-echo "If you don't found userinfo.txt in current directory, use 'chmod +xw user-enum.sh'."
-exec &> userinfo.txt
+echo User Information Report Generated to $(pwd)/userinfo_$(hostname).txt
+echo "If you don't found, use chmod +xw user-enum.sh command to give permission"
+exec &> userinfo_$(hostname).txt
 
 date
+echo
+echo Hostname - $(hostname)
+echo
+echo IP - $(hostname -I)
 echo
 echo ++++++++++++++++++++++++++++++++
 echo "list all users and their groups"
